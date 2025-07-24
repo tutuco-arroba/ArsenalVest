@@ -71,6 +71,7 @@ body {
 
             border: 1rem solid transparent;
             border-radius: 1rem;
+            box-shadow: 0 0 0.5rem var(--azul-claro);
 
             div.desenvolvimento{
 
@@ -135,30 +136,77 @@ body {
                     justify-content: flex-start;
                     gap: 1rem;
 
-                    li {
+                    li.alternativas__alternativas__alternativa {
 
-                        padding: 1rem;
+                        width: 100%;
 
-                        box-shadow: 0rem 0rem 0.5rem var(--azul-escuro);
+                        button.alternativas__alternativas__alternativa__botao {
 
-                        border: 1rem;
-                        border-radius: 0.5rem;
+                            width: 100%;
 
-                        transition: 0.3s;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            text-align: left;
+                            gap: 2rem;
 
-                    }
+                            padding: 1rem;
 
-                    li:hover {
+                            background-color: var(--bege);
+                            color: var(--azul-escuro);
 
-                        background-color: var(--bege-escuro);
+                            border: 1rem solid transparent;
+                            border-radius: 1rem;
+                            box-shadow: 0rem 0rem 0.5rem var(--azul-escuro);
+
+                            cursor: pointer;
+
+                            transition: 0.3s;
+
+                        }
+
+                        button.alternativas__alternativas__alternativa__botao:hover {
+
+                            background-color: var(--azul-escuro);
+                            color: var(--bege);
+
+                        }
 
                     }
 
                 }
 
+                button.mostrar {
+
+                    width: 50%;
+                    align-self: flex-end;
+
+                    padding: 1rem;
+
+                    background-color: var(--bege);
+                    color: var(--azul-escuro);
+
+                    border: 1rem solid transparent;
+                    border-radius: 1rem;
+                    box-shadow: 0rem 0rem 0.5rem var(--azul-escuro);
+
+                    cursor: pointer;
+
+                    transition: 0.3s;
+
+                }
+
+                button.mostrar:hover {
+
+                    background-color: var(--azul-escuro);
+                    color: var(--bege);
+
+                }
+
             }
 
-            div.resolucao, button.mostrar {
+            div.resolucao {
 
                 display: none;
 

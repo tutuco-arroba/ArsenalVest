@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
 
-    --azul-escuro: #232C4D;
-    --azul-claro: #6B769C;
     --bege: #F4ECD7;
-    --bege-escuro: #EDE3CA;
+    --azul-claro: #6B769C;
+    --azul-escuro: #232C4D;
 
 }
 
@@ -15,13 +16,20 @@ html {
 
 body {
 
-    background-color: var(--azul-escuro);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: var(--bege);
 
     span.italico {font-style: italic;}
     span.negrito{font-weight: bold;}
     span.sublinhado{text-decoration: underline;}
 
-    header{
+    font-size: 200%;
+
+    header {
 
         display: flex;
         justify-content: space-between;
@@ -35,7 +43,7 @@ body {
             align-self: flex-end;
 
             i {
-                color: var(--bege);
+                color: var(--azul-escuro);
                 font-size: 4rem;
             }
 
@@ -44,7 +52,7 @@ body {
             }
 
         }
-
+        
     }
 
     main {
@@ -56,55 +64,62 @@ body {
 
         margin: 0rem 7rem 7rem;
 
-        section{
+        section {
 
-            background-color: var(--bege);
-            color: var(--azul-escuro);
+            background-color: var(--azul-escuro);
+            color: var(--bege);
 
             padding: 5rem;
 
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-
-            font-size: 200%;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            gap: 3rem;
 
             border: 1rem solid transparent;
             border-radius: 1rem;
             box-shadow: 0 0 0.5rem var(--azul-claro);
 
-            div.desenvolvimento{
-
-                width: 45%;
+            div.cabeca {
 
                 display: flex;
-                flex-flow: column nowrap;
+                flex-flow: row nowrap;
                 justify-content: flex-start;
                 gap: 1rem;
 
-                div.cabecalho {
+                font-weight: 600;
 
-                    display: flex;
-                    flex-flow: row-reverse nowrap;
-                    justify-content: flex-end;
-                    gap: 1rem;
+                font-size: 125%;
 
-                    font-weight: 600;
+                h2.cabeca__codigo {
 
-                    h2.cabecalho__codigo {
-
-                        color: var(--azul-claro);
-
-                    }
+                    color: var(--azul-claro);
 
                 }
 
+            }
+
+            div.corpo {
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                gap: 5rem;
+
                 div.enunciado {
+                    
+                    width: 50%;
 
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: flex-start;
                     gap: 1rem;
+
+                    p.enunciado__legenda {
+
+                        font-size: 75%;
+
+                    }
 
                     div.img {
 
@@ -117,96 +132,104 @@ body {
 
                 }
 
-            }
+                div.alternativas{
 
-            div.alternativas {
-
-                width: 45%;
-                height: auto;
-
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: flex-start;
-                gap: 2rem;
-
-                ul.alternativas__alternativas {
+                    width: 50%;
+                    height: auto;
 
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: flex-start;
-                    gap: 1rem;
+                    gap: 2rem;
+                    
+                    font-size: 100%;
 
-                    li.alternativas__alternativas__alternativa {
+                    ul.alternativas__alternativas {
 
-                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        gap: 1rem;
 
-                        button.alternativas__alternativas__alternativa__botao {
+                        li.alternativas__alternativas__alternativa {
 
                             width: 100%;
 
-                            display: flex;
-                            flex-flow: row nowrap;
-                            justify-content: flex-start;
-                            align-items: center;
-                            text-align: left;
-                            gap: 2rem;
+                            font-size: 100%;
 
-                            padding: 1rem;
 
-                            background-color: var(--bege);
-                            color: var(--azul-escuro);
+                            button.alternativas__alternativas__alternativa__botao {
 
-                            border: 1rem solid transparent;
-                            border-radius: 1rem;
-                            box-shadow: 0rem 0rem 0.5rem var(--azul-escuro);
+                                width: 100%;
 
-                            cursor: pointer;
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: flex-start;
+                                align-items: center;
+                                text-align: left;
+                                gap: 2rem;
 
-                            transition: 0.3s;
+                                padding: 1rem;
 
-                        }
+                                font-size: 75%;
 
-                        button.alternativas__alternativas__alternativa__botao:hover {
+                                background-color: var(--azul-escuro);
+                                color: var(--bege);
 
-                            background-color: var(--azul-escuro);
-                            color: var(--bege);
+
+                                border: 1rem solid transparent;
+                                border-radius: 1rem;
+                                box-shadow: 0rem 0rem 0.5rem var(--azul-claro);
+
+                                cursor: pointer;
+
+                                transition: 0.3s;
+
+                            }
+
+                            button.alternativas__alternativas__alternativa__botao:hover {
+
+                                background-color: var(--bege);
+                                color: var(--azul-escuro);
+
+                            }
 
                         }
 
                     }
 
-                }
+                    button.mostrar {
 
-                button.mostrar {
+                        width: 50%;
+                        align-self: flex-end;
 
-                    width: 50%;
-                    align-self: flex-end;
+                        padding: 1rem;
 
-                    padding: 1rem;
+                        background-color: var(--azul-escuro);
+                        color: var(--bege);
 
-                    background-color: var(--bege);
-                    color: var(--azul-escuro);
+                        border: 1rem solid transparent;
+                        border-radius: 1rem;
+                        box-shadow: 0rem 0rem 0.5rem var(--azul-claro);
 
-                    border: 1rem solid transparent;
-                    border-radius: 1rem;
-                    box-shadow: 0rem 0rem 0.5rem var(--azul-escuro);
+                        cursor: pointer;
 
-                    cursor: pointer;
+                        transition: 0.3s;
 
-                    transition: 0.3s;
+                    }
 
-                }
+                    button.mostrar:hover {
 
-                button.mostrar:hover {
+                        background-color: var(--bege);
+                        color: var(--azul-escuro);
 
-                    background-color: var(--azul-escuro);
-                    color: var(--bege);
+                    }
 
                 }
 
             }
 
-            div.resolucao {
+            div.pes {
 
                 display: none;
 
@@ -215,5 +238,5 @@ body {
         }
 
     }
-
+    
 }

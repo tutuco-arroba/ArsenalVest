@@ -1,0 +1,110 @@
+:root {
+
+    --cor-azul-escuro: #232C4D;
+    --cor-azul-claro: #6B769C;
+    --cor-bege: #F4ECD7;
+
+}
+
+html {
+
+    font-size: 1vw;
+
+}
+
+body {
+
+    background-color: var(--cor-bege);
+
+    height: 100rem;
+
+    header {
+
+        background-color: var(--cor-azul-escuro);        
+
+        section#cabecalho {
+
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row nowrap;
+
+            height: 5vw;
+
+            padding: 2vw 5vw;
+
+            a {
+
+                align-self: flex-end;
+
+                i {
+
+                    color: var(--cor-bege);
+                    font-size: 4vw;
+
+                }
+
+                img {
+
+                    height: 5vw;
+
+                }
+
+            }
+
+        }
+
+        section#banner {
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            padding: 6vw 5vw 3vw 5vw;
+
+            img#banner__bem-vindo {
+
+                width: 50vw;
+
+            }
+
+            img#banner__3000 {
+
+                width: 25vw;
+
+            }
+
+        }
+        
+        section#social {
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+
+            gap: 1%;
+
+            padding: 3vw 5vw 6vw 5vw;
+
+            a.social__icone {
+
+                i {
+
+                    color: var(--cor-bege);
+                    font-size: 3.75rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    main {
+
+        height: 1000px;
+
+    }
+
+}

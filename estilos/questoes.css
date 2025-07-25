@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+
+    --bege: #F4ECD7;
+    --azul-claro: #6B769C;
+    --azul-escuro: #232C4D;
+
+}
+
+html {
+
+    font-size: 62.5%;
+
+}
+
+body {
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: var(--bege);
+
+    span.italico {font-style: italic;}
+    span.negrito{font-weight: bold;}
+    span.sublinhado{text-decoration: underline;}
+
+    font-size: 200%;
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        height: 4rem;
+
+        padding: 3.5rem 7rem;
+
+        a {
+
+            align-self: flex-end;
+
+            i {
+                color: var(--azul-escuro);
+                font-size: 4rem;
+            }
+
+            img {
+                    height: 5rem;
+            }
+
+        }
+        
+    }
+
+    main {
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        gap: 5rem;
+
+        margin: 0rem 7rem 7rem;
+
+        section {
+
+            background-color: var(--azul-escuro);
+            color: var(--bege);
+
+            padding: 5rem;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            gap: 3rem;
+
+            border: 1rem solid transparent;
+            border-radius: 1rem;
+            box-shadow: 0 0 0.5rem var(--azul-claro);
+
+            div.cabeca {
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                gap: 1rem;
+
+                font-weight: 600;
+
+                font-size: 125%;
+
+                h2.cabeca__codigo {
+
+                    color: var(--azul-claro);
+
+                }
+
+            }
+
+            div.corpo {
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                gap: 5rem;
+
+                div.enunciado {
+                    
+                    width: 50%;
+
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: flex-start;
+                    gap: 1rem;
+
+                    p.enunciado__legenda {
+
+                        font-size: 75%;
+
+                    }
+
+                    div.img {
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        gap: 1rem;
+
+                    }
+
+                }
+
+                div.alternativas{
+
+                    width: 50%;
+                    height: auto;
+
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: flex-start;
+                    gap: 2rem;
+                    
+                    font-size: 100%;
+
+                    ul.alternativas__alternativas {
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        gap: 1rem;
+
+                        li.alternativas__alternativas__alternativa {
+
+                            width: 100%;
+
+                            font-size: 100%;
+
+
+                            button.alternativas__alternativas__alternativa__botao {
+
+                                width: 100%;
+
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: flex-start;
+                                align-items: center;
+                                text-align: left;
+                                gap: 2rem;
+
+                                padding: 1rem;
+
+                                font-size: 75%;
+
+                                background-color: var(--azul-escuro);
+                                color: var(--bege);
+
+
+                                border: 1rem solid transparent;
+                                border-radius: 1rem;
+                                box-shadow: 0rem 0rem 0.5rem var(--azul-claro);
+
+                                cursor: pointer;
+
+                                transition: 0.3s;
+
+                            }
+
+                            button.alternativas__alternativas__alternativa__botao:hover {
+
+                                background-color: var(--bege);
+                                color: var(--azul-escuro);
+
+                            }
+
+                        }
+
+                    }
+
+                    button.mostrar {
+
+                        width: 50%;
+                        align-self: flex-end;
+
+                        padding: 1rem;
+
+                        background-color: var(--azul-escuro);
+                        color: var(--bege);
+
+                        border: 1rem solid transparent;
+                        border-radius: 1rem;
+                        box-shadow: 0rem 0rem 0.5rem var(--azul-claro);
+
+                        cursor: pointer;
+
+                        transition: 0.3s;
+
+                    }
+
+                    button.mostrar:hover {
+
+                        background-color: var(--bege);
+                        color: var(--azul-escuro);
+
+                    }
+
+                }
+
+            }
+
+            div.pes {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+    
+}

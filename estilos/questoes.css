@@ -267,7 +267,7 @@ body {
                 border-radius: 1rem;
                 box-shadow: 0 0 0.5rem var(--azul-claro);
 
-                p.resolucao__titulo {
+                h3.resolucao__titulo {
 
                     background-color: transparent;
 
